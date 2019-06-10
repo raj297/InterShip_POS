@@ -1,0 +1,1 @@
+A Sample POS application
