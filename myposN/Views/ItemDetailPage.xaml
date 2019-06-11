@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyPOS.Views.ItemDetailPage"
+             Title="{Binding Title}">
+
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="Name" FontSize="Small" />
+        <Label Text="{Binding Item.Text}" d:Text="Name" FontSize="Medium"/>
+        <Label Text="Category" FontSize="Small" />
+        <Label Text="{Binding Item.Category}" d:Text="Category" FontSize="Medium"/>
+        <Label Text="Price" FontSize="Small" />
+        <Label Text="{Binding Item.Price}" d:Text="Price" FontSize="Medium"/>
+        <Label Text="Cost" FontSize="Small" />
+        <Label Text="{Binding Item.Cost}" d:Text="Cost" FontSize="Medium"/>
+        <Label Text="SKU" FontSize="Small" />
+        <Label Text="{Binding Item.SKU}" d:Text="SKU" FontSize="Medium"/>
+        <Label Text="Barcode" FontSize="Small" />
+        <Label Text="{Binding Item.Barcode}" d:Text="Barcode" FontSize="Medium"/>
+    </StackLayout>
+    
+</ContentPage>
